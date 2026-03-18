@@ -37,13 +37,9 @@ export default function Sidebar({ active, onNavigate }) {
         </a>
       </div>
       <div className="px-5 py-4 border-t border-forge-border space-y-2">
-        <a href="http://localhost:6006" target="_blank" rel="noreferrer"
+        <a href={`http://${window.location.hostname}:6006`} target="_blank" rel="noreferrer"
           className="flex items-center gap-2 text-xs text-forge-muted hover:text-forge-accent transition-colors">
           <Activity className="w-3.5 h-3.5" /> TensorBoard (6006)
-        </a>
-        <a href="http://localhost:6007" target="_blank" rel="noreferrer"
-          className="flex items-center gap-2 text-xs text-forge-muted hover:text-forge-accent transition-colors">
-          <Activity className="w-3.5 h-3.5" /> TensorBoard (6007)
         </a>
       </div>
     </aside>

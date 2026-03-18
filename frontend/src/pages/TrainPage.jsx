@@ -255,13 +255,9 @@ export default function TrainPage({ onNavigate = null }) {
         <h2 className="text-sm font-medium mb-2">TensorBoard</h2>
         <p className="text-sm text-forge-muted mb-3">Detailed metrics, loss curves, accuracy, learning rate schedules.</p>
         <div className="flex gap-3">
-          <a href="http://localhost:6006" target="_blank" rel="noreferrer"
+          <a href={`http://${window.location.hostname}:6006`} target="_blank" rel="noreferrer"
             className="px-4 py-2 bg-forge-accent/10 text-forge-accent border border-forge-accent/30 rounded text-sm hover:bg-forge-accent/20">
             TensorBoard (6006)
-          </a>
-          <a href="http://localhost:6007" target="_blank" rel="noreferrer"
-            className="px-4 py-2 bg-white/5 text-forge-muted border border-forge-border rounded text-sm hover:bg-white/10">
-            Standalone (6007)
           </a>
         </div>
       </div>
